@@ -5,7 +5,9 @@ It's available on the [Chrome Web Store](https://chrome.google.com/webstore/deta
 ## How ads are removed
 Ads are removed by intercepting and then tampering with Spotify's state machine requests/updates on the fly. 
 
-The states are modified so that states that represent ads are skipped over (pointing to the state afterwards). This is done in `ads_removal.js`.
+The states are modified so that states that represent ads are skipped over (pointing to the state afterwards). This is done in `ads_removal.js`. 
+
+However `ad-removal.js` is broken somehow as the spotify interception is failing
 
 ## Firefox/Safari Support
 Possibly [here](https://github.com/tomer8007/spotify-web-ads-remover/pull/2) and [there](https://github.com/tomer8007/spotify-web-ads-remover/pull/8).
